@@ -124,6 +124,15 @@ namespace EXE5_143_KLMPOK2
                     ch = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine();
                     switch (ch)
+                    {
+                        case '1':
+                            {
+                                Console.WriteLine("Enter a number: ");
+                                int num = Convert.ToInt32(Console.Read());
+                                Console.WriteLine();
+                                queue.insert(num);
+                            }
+                            break;
 
                     }
                
