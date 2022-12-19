@@ -62,8 +62,50 @@ namespace EXE5_143_KLMPOK2
                 else
                     AHMAD = AHMAD + 1;
             }
-        
+        }
 
-    }
+        public void display()
+        {
+            int FRONT_position = AHMAD;
+            int REAR_position = REAR;
+         
+            if (AHMAD == -1)
+            {
+                Console.WriteLine("Queue is empty\n");
+                return;
+            }
+            Console.WriteLine("\nElements in the queue are ...............................\n");
+            if (FRONT_position <= REAR_position)
+            {
+      
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + "  ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
+            }
+            else
+            {
+               
+                while (FRONT_position <= max - 1)
+                {
+                    Console.Write(queue_array[FRONT_position] + "  ");
+                    FRONT_position++;
+                }
+               
+                FRONT_position = 0;
+         
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + "  ");
+                    FRONT_position++;
+                }
+
+
+
+
+            }
+        }
     }
 }
