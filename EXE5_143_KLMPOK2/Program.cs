@@ -77,7 +77,7 @@ namespace EXE5_143_KLMPOK2
             Console.WriteLine("\nElements in the queue are ...............................\n");
             if (FRONT_position <= REAR_position)
             {
-      
+
                 while (FRONT_position <= REAR_position)
                 {
                     Console.Write(queue_array[FRONT_position] + "  ");
@@ -87,25 +87,57 @@ namespace EXE5_143_KLMPOK2
             }
             else
             {
-               
+
                 while (FRONT_position <= max - 1)
                 {
                     Console.Write(queue_array[FRONT_position] + "  ");
                     FRONT_position++;
                 }
-               
+
                 FRONT_position = 0;
-         
+
                 while (FRONT_position <= REAR_position)
                 {
                     Console.Write(queue_array[FRONT_position] + "  ");
                     FRONT_position++;
                 }
+                Console.WriteLine();
 
+            }
+        }
 
+        static void Main(string[] args)
 
+        {
+            node queue = new node();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1. Implement insert operation");
+                    Console.WriteLine("2. Implement delete operation");
+                    Console.WriteLine("3. Display value");
+                    Console.WriteLine("4. Exit");
+                    Console.WriteLine("\nEnter your choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+
+                    }
+               
+                }
 
             }
         }
     }
 }
+
+
+
+
+
+
+
+
