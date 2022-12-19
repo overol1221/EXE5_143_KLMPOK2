@@ -138,6 +138,11 @@ namespace EXE5_143_KLMPOK2
                                 queue.remove();
                             }
                             break;
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
 
                     }
                
