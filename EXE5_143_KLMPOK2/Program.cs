@@ -50,7 +50,20 @@ namespace EXE5_143_KLMPOK2
             }
             Console.WriteLine("\nThe Elements deleted from queue is: " + queue_array[AHMAD]
                 + "\n");
+            if (AHMAD == REAR)
+            {
+                AHMAD = -1;
+                REAR = -1;
+            }
+            else
+            {
+                if (AHMAD == max - 1)
+                    AHMAD = 0;
+                else
+                    AHMAD = AHMAD + 1;
+            }
+        
 
-        }
+    }
     }
 }
