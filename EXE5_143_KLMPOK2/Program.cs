@@ -14,9 +14,22 @@ namespace EXE5_143_KLMPOK2
 
         public node()
         {
-            /*intializing the values of the variables REAR and FRONT to -1 to indicate that * the queue is intializing empty.*/
             AHMAD = -1;
             REAR = -1;
+        }
+        public void insert(int element)
+        {
+           
+            if ((AHMAD == 0 && REAR == max - 1) || (AHMAD == REAR + 1))
+            {
+                Console.WriteLine("\nQueue overvlow\n");
+                return;
+            }
+                if (AHMAD == -1)
+            {
+                AHMAD = 0;
+                REAR = 0;
+            }
         }
     }
 }
