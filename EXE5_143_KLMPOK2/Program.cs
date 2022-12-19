@@ -143,6 +143,13 @@ namespace EXE5_143_KLMPOK2
                                 queue.display();
                             }
                             break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid option!!");
+                            }
+                            break;
 
                     }
                
